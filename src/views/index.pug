@@ -1,0 +1,11 @@
+html(lang="en")
+  head
+    include _includes/partials/head.pug
+
+  body
+    h1 Waku Waku
+
+  script.
+    window.ASSETS = !{JSON.stringify(assets).replace(/<\//g, '<\\/')}
+
+  script(type="module", src="/src/app/index.js")
