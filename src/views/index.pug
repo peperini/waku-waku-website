@@ -1,9 +1,10 @@
+doctype html
 html(lang="en")
   head
     include _includes/partials/head.pug
 
   body
-    h1 Waku Waku
+    include _includes/layouts/home.pug
 
   script.
     window.ASSETS = !{JSON.stringify(assets).replace(/<\//g, '<\\/')}
